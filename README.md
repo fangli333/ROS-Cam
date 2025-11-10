@@ -10,6 +10,11 @@ Official implementation of **RGB-Only Supervised Camera Parameter Optimization i
 [**Hao Zhang**](https://haoz19.github.io/),
 [**Narendra Ahuja**](https://scholar.google.com/citations?user=dY7OSl0AAAAJ&hl=en),
 
+<p align="center">
+  <img src="assets/H.png" alt="ROS-Cam teaser" width="80%">
+  <br>
+</p>
+
 
 <div style="line-height: 1;">
   <a href="https://arxiv.org/abs/2509.15123" target="_blank" style="margin: 2px;">
