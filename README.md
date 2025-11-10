@@ -19,5 +19,30 @@ Official implementation of **RGB-Only Supervised Camera Parameter Optimization i
 
 
 ## NEWS
-- 11/09/2025: Official Code is released.
+- 11/09/2025: Code is released.
+
+## ENVIRONMENT SETUP
+```bash
+git clone --recursive https://github.com/fangli333/ROS-Cam.git
+cd ROS-Cam
+conda create -n ROS-Cam python=3.10
+conda activate ROS-Cam
+pip install torch==2.1.0+cu118 torchvision==0.16.0+cu118 torchaudio==2.1.0+cu118 --extra-index-url https://download.pytorch.org/whl/cu118
+pip install -r requirements.txt
+python -m pip install submodules/depth-diff-gaussian-rasterization --no-build-isolation
+python -m pip install submodules/simple-knn --no-build-isolation
+```
+Please also customize the environment based on your devices.
+
+## DATA
+- [NeRD-DS](https://jokeryan.github.io/projects/nerf-ds/)
+- [DAVIS](https://davischallenge.org/davis2016/code.html)
+- [iPhone](https://kair-bair.github.io/dycheck/)
+- [MPI-Sintel](http://sintel.is.tue.mpg.de/)
+- [TUM-Dynamic](https://cvg.cit.tum.de/data/datasets/rgbd-dataset/download)
+
+  ## Patch-wise Tracking Filters
+  ```bash
+python filters.py
+```
 
