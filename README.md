@@ -41,8 +41,34 @@ Please also customize the environment based on your devices.
 - [MPI-Sintel](http://sintel.is.tue.mpg.de/)
 - [TUM-Dynamic](https://cvg.cit.tum.de/data/datasets/rgbd-dataset/download)
 
-  ## Patch-wise Tracking Filters
-  ```bash
+## OPTIMIZATION
+
+Patch-wise Tracking Filters
+
+```bash
 python filters.py
 ```
+
+Camera Parameter Optimization & 4D Scene Reconstruction
+```bash
+python train.py -s data_path --port 6017 --expname exp_path --configs arguments/default.py --ptidxfolder filters_result_path --pt3dplyfolder points3d.ply --camerafolder cameraresult_path
+
+#For example:
+python train.py -s data/DAVIS/JPEGImages/480p/bear --port 6017 --expname "davis/bear" --configs arguments/default.py --ptidxfolder filter_results/DAVIS/bear --pt3dplyfolder points3d.ply --camerafolder result
+```
+
+## CITATION
+If you find our work useful, please cite:
+```bash
+@article{li2025rgb,
+  title={RGB-Only Supervised Camera Parameter Optimization in Dynamic Scenes},
+  author={Li, Fang and Zhang, Hao and Ahuja, Narendra},
+  journal={arXiv preprint arXiv:2509.15123},
+  year={2025}
+}
+```
+
+##ACKNOWLEDGEMENTS
+Our code is based on [CoTracker](https://github.com/facebookresearch/co-tracker) and (4DGS)[https://github.com/hustvl/4DGaussians]. we thank the authors for their excellent work!
+
 
