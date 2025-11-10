@@ -9,12 +9,6 @@
 # For inquiries contact  george.drettakis@inria.fr
 #
 
-
-# python train.py -s /work/hdd/bcmu/fangli3/4DGaussians/data/DAVIS/JPEGImages/480p/bear --port 6017 --expname "davis/bear" --configs /work/hdd/bcmu/fangli3/ROS-Cam/arguments/default.py --ptidxfolder /work/hdd/bcmu/fangli3/co-tracker/result/DAVIS/bearnomask --pt3dplyfolder /work/hdd/bcmu/fangli3/4DGaussians/data/DAVIS/points3d.ply --camerafolder /work/hdd/bcmu/fangli3/ROS-Cam/result
-
-
-
-
 import numpy as np
 import random
 import os, sys
@@ -64,8 +58,6 @@ def scene_reconstruction(dataset, opt, hyper, pipe, testing_iterations, saving_i
                          gaussians, scene, stage, tb_writer, train_iter,timer):
     first_iter = 0
     
-    
-    # pcd_cube = fetchPly('/work/hdd/bcmu/fangli3/4DGaussians/data/NeRF-DS/bell/points3d.ply')
     pcd_cube = fetchPly(f'{args.pt3dplyfolder}')
     
     scene.gaussians.create_from_pcd(pcd_cube, scene.cameras_extent)
@@ -281,7 +273,6 @@ def scene_reconstruction(dataset, opt, hyper, pipe, testing_iterations, saving_i
 
 
 def camera_learn(dataset, opt, hyper, pipe, gaussians, scene, timer):
-    # torch.autograd.set_detect_anomaly(True)
     gaussians.training_setup(opt, torch.tensor(5, device='cuda'))
 
     viewpoint_stack = scene.getTrainCameras()
