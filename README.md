@@ -18,6 +18,6 @@ Official implementation of **RGB-Only Supervised Camera Parameter Optimization i
 </div>
 
 
-## TODO
-- [ ] Code will be released soon.
+## NEWS
+- 11/09/2025: Official Code is released.
 
