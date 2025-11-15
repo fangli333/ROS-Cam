@@ -70,7 +70,7 @@ If you find our work useful, please cite:
 }
 ```
 
-##ACKNOWLEDGEMENTS
+## ACKNOWLEDGEMENTS
 Our code is based on [CoTracker](https://github.com/facebookresearch/co-tracker) and [4DGS](https://github.com/hustvl/4DGaussians). We thank the authors for their excellent work!
 
 
