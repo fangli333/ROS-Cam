@@ -12,6 +12,11 @@ NeurIPS 2025 Spotlight🔥
 [**Hao Zhang**](https://haoz19.github.io/),
 [**Narendra Ahuja**](https://scholar.google.com/citations?user=dY7OSl0AAAAJ&hl=en),
 
+<br>
+<div style="text-align: center; margin: 20px 0;">
+    <img src="POSTER.png" alt="Teaser Image" width="80%" />
+</div>
+<br>
 
 <div style="line-height: 1;">
   <a href="https://arxiv.org/abs/2509.15123" target="_blank" style="margin: 2px;">
